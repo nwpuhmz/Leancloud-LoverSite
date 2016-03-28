@@ -1,0 +1,196 @@
+
+<!--====================================Section 1===========================================================-->
+<section id="section-1">
+<div style="height: auto">
+  <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" no-transition="noTransition">
+    <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+      <img ng-src="{{slide.image}}" style="margin:auto;">
+      <div class="carousel-caption">
+        <h4>Slide {{slide.id}}</h4>
+        <p>{{slide.text}}</p>
+      </div>
+    </uib-slide>
+  </uib-carousel>
+</div>
+</section>
+
+<!--====================================Section 2===========================================================-->
+<section id="section-2">
+  <div class="container-fluid  wow  fadeInUp" style="margin-left: 100px;margin-right: 100px">
+    <div class="page-header">
+    </div>
+    <div class="row">
+      <div class="col-md-3 ">
+        <div class="text-left animated bounceInUp">
+          <h2>He</h2>
+          <h2>PROPOSED</h2>
+          <small>I got down on one knee, knees shaking, voice trembling and said: “Will you marry me, please?”.
+            She started loughig, then crying. Then she replied: “Of course, I will, you silly!”</small>
+        </div>
+      </div>
+      <div class="col-md-3"><img src="http://weddingevent.ancorathemes.com/wp-content/uploads/2015/09/asher.jpg" alt="..." class="img-responsive"></div>
+      <div class="col-md-3"><img src="http://weddingevent.ancorathemes.com/wp-content/uploads/2015/09/joanna.jpg" alt="..." class="img-responsive"></div>
+      <div class="col-md-3">
+        <div class="text-right animated bounceInUp">
+          <h2>SHE</h2>
+          <h2>SAID <span class="damion" style="margin-right: 4px;">yes!</span></h2>
+          <small>Reaction? Of course, I told him yes. Tell him yes. Even if you are dying of fear, even if you are sorry later,
+            because whatever you do, you will be sorry all the rest of your life if you say no.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--====================================Section 3===========================================================-->
+<section id="section-3">
+  <div class="container-fluid" style="margin-top: 50px">
+    <div class="page-header text-center" style="margin-left: 100px;margin-right: 100px">
+      <h1><small>GALLERY</small></h1>
+    </div>
+    <div  class=" clearfix grid" ng-repeat="gallery in galleries track by $index" ng-if="$index % 3 === 0">
+
+      <figure class="effect-roxy  wow  fadeInUp " ng-if="$index < galleries.length">
+        <img src="{{galleries[$index].imgUrl}}" alt="^_^">
+        <figcaption>
+          <h2>{{galleries[$index].title}}</h2>
+          <p>{{galleries[$index].time}}<br>
+            <a href="{{galleries[$index].imgUrl}}" title="1" data-gallery>View more</a></p>
+        </figcaption>
+      </figure>
+      <figure class="effect-roxy wow  fadeInUp" ng-if="$index+1 < galleries.length">
+        <img src="{{galleries[$index+1].imgUrl}}" alt="^_^">
+        <figcaption>
+          <h2>{{galleries[$index+1].title}}</h2>
+          <p>{{galleries[$index+1].time}}<br>
+            <a href="{{galleries[$index+1].imgUrl}}" title="1" data-gallery>View more</a></p>
+        </figcaption>
+      </figure>
+      <figure class="effect-roxy wow  fadeInUp" ng-if="$index+2< galleries.length">
+        <img src="{{galleries[$index+2].imgUrl}}" alt="^_^">
+        <figcaption>
+          <h2>{{galleries[$index+2].title}}</h2>
+          <p>{{galleries[$index+2].time}}<br>
+            <a href="{{galleries[$index+2].imgUrl}}" title="1" data-gallery>View more</a></p>
+        </figcaption>
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<section id="section-4">
+<div class="container">
+  <div class="page-header text-center">
+    <h1 id="timeline"><small>TIME LINE</small></h1>
+  </div>
+  <ul class="timeline ">
+    <li>
+      <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+      <div class="timeline-panel  wow  fadeInUp">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+      <div class="timeline-panel  wow  fadeInUp">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+          <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+      <div class="timeline-panel  wow  fadeInUp">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-panel  wow  fadeInUp">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+      <div class="timeline-panel  wow  fadeInUp">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+          <hr>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+              <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-panel  wow  fadeInUp">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+      <div class="timeline-panel  wow  fadeInUp">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+        </div>
+        <div class="timeline-body">
+          <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</section>
+<footer>
+  <div class="pull-right">
+    <img ng-click="toTheTop()" src="images/scroll_to_top.png" class="img-responsive" alt="Responsive image">
+  </div>
+</footer>
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+  <!-- The container for the modal slides -->
+  <div class="slides"></div>
+  <!-- Controls for the borderless lightbox -->
+  <h3 class="title">Title</h3>
+  <a class="prev">‹</a>
+  <a class="next">›</a>
+  <a class="close">×</a>
+  <!-- The modal dialog, which will be used to wrap the lightbox content -->
+</div>
